@@ -22,9 +22,6 @@ h2 {
 
 .about-us-section {
   /* Positioning */
-  /* display: inline-flex; */
-  padding-top: 64px;
-  align-items: flex-start;
 
   /* Box model */
 
@@ -37,14 +34,12 @@ h2 {
 
 .about-us-container {
   width: 375px;
-  padding-left: 16px;
-  padding-right: 16px;
   margin: 0 auto;
 }
 
 .about-us-wrapper {
   /* Positioning */
-
+  padding: 64px 16px;
   /* Box model */
 
   /* Typography */
@@ -63,6 +58,7 @@ h2 {
 .about-us-titel {
   /* Positioning */
   margin-bottom: 30px;
+  left: 50px;
   /* Box model */
 
   /* Typography */
@@ -79,16 +75,18 @@ h2 {
 
 .special {
   color: #0a224a;
+  position: relative;
 }
 
-.special::after {
+.special::before {
   content: "";
-  left: 0;
+  left: -50px;
+  bottom: 10px;
   width: 30px;
   height: 1px;
   background-color: #0a224a;
   position: absolute;
-  top: 100px;
+  
 }
 
 .about-us-slogan {
@@ -133,6 +131,7 @@ h2 {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
+  width: 170px;
   /* Typography */
 
   /* Visual */
