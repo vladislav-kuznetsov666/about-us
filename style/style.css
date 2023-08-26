@@ -183,3 +183,8 @@ h2 {
   flex-direction: column;
   gap: 14px;
 }
+
+.about-us-img-wrapper {
+  display: flex;
+  justify-content: center;
+}
