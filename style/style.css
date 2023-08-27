@@ -33,7 +33,9 @@ h2 {
 }
 
 .about-us-container {
-  width: 375px;
+  width: 100%;
+  /* max-width: 375px; */
+  max-width: 320px;
   margin: 0 auto;
 }
 
@@ -60,13 +62,13 @@ h2 {
   margin-bottom: 30px;
   left: 50px;
   /* Box model */
-
+  width: 100px;
   /* Typography */
   font-family: "Roboto", sans-serif;
   color: #0a224a;
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 20px;
 
   /* Visual */
 
@@ -86,7 +88,6 @@ h2 {
   height: 1px;
   background-color: #0a224a;
   position: absolute;
-  
 }
 
 .about-us-slogan {
@@ -97,9 +98,8 @@ h2 {
   /* Typography */
   color: #0a224a;
   font-family: "Roboto", sans-serif;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 42px;
+  font-size: 20px;
+  line-height: 30px;
   text-transform: uppercase;
 
   /* Visual */
@@ -148,9 +148,9 @@ h2 {
   color: #0a224a;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 400;
-  line-height: 75px;
+  line-height: 65px;
   text-transform: uppercase;
 
   /* Visual */
@@ -167,9 +167,8 @@ h2 {
   color: #0a224a;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
 
   /* Visual */
 
@@ -188,3 +187,135 @@ h2 {
   display: flex;
   justify-content: center;
 }
+
+/* Media  */
+
+/* mob 375px */
+@media screen and (min-width: 375px) {
+  .about-us-container {
+    max-width: 375px;
+  }
+
+  .about-us-titel {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .about-us-slogan {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .about-us-descrition {
+font-size: 16px;
+line-height: 24px;
+  }
+
+  .about-us-list-item-span {
+font-size: 50px;
+font-weight: 400;
+line-height: 75px; 
+  }
+
+  .about-us-list-item-text {
+font-size: 16px;
+line-height: 24px;
+  }
+}
+
+/* tablet 768px */
+
+@media screen and (min-width: 768px) {
+
+  .about-us-section {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .about-us-container {
+    max-width: 768px;
+  }
+
+  .about-us-slogan {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 45px;
+  }
+
+  .about-us-descrition {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  .about-us-wrapper {
+    padding: 36px 64px;
+  }
+
+  .about-us-statistic-list {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: inherit;
+    gap: 33px;
+  }
+
+  .about-us-statisctic-list-wrapper {
+  }
+
+  .about-us-list-item-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  .about-us-img-wrapper {
+    width: auto;
+    height: auto;
+    margin-top: 30px;
+  }
+}
+/* desktop 1440px */
+
+@media screen and (min-width: 1440px) {
+
+  .about-us-section {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .about-us-container {
+    max-width: 1440px;
+    display: flex;
+    gap: 24px;
+  }
+
+  .about-us-wrapper {
+    padding: 34px 69px;
+  }
+
+  .about-us-img-wrapper {
+    margin-top: 0;
+    width: 1140px;
+  }
+
+  .about-us-statistic-list {
+    gap: 56px;
+  }
+
+  .about-us-list-item-text {
+    width: 170px;
+  }
+
+}
+
+display: flex;
+width: 576px;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+flex-wrap: inherit;
